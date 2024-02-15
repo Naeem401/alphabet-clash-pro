@@ -11,15 +11,69 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="max-w[1440px] bg-[#010313] h-screen">
-    <main class="md:w-[85%] lg:w-[75%] mx-auto h-screen bg-no-repeat bg-center flex justify-center" style="background-image: url(images/background.png);" >
+    <main class="md:w-[85%] lg:w-[75%] mx-auto h-screen bg-no-repeat bg-top flex justify-center" style="background-image: url(images/background.png);" >
         <!-- Home section -->
-        <section class="home text-center px-4 flex flex-col justify-center items-center">
+        <section id="home" class="text-center px-4 flex flex-col justify-center items-center">
             <h2 class="anton text-[4rem] md:text-[7rem] lg:text-[8rem] text-white mb-4 md:mb-6">ALPHABET CLASH</h2>
             <p class="poppins font-medium text-[1rem] md:text-[1.20rem] lg:text-[1.5rem] text-white mb-4 md:mb-14">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="py-5 px-8 bg-white rounded-lg poppins text-2xl font-semibold text-[#010313] hover:bg-slate-400">Play Now</button>
+            <button onclick="play()" class="py-5 px-8 bg-white rounded-lg poppins text-2xl font-semibold text-[#010313] hover:bg-slate-400">Play Now</button>
         </section>
         <!-- Gaming Seaction -->
-    </main>
+        <div id="game-section" class=" hidden flex flex-col justify-center items-center gap-y-14">
+            <div class="artboard artboard-horizontal phone-6 border-solid border-[20px] border-[#1e1e1e] rounded-2xl text-center bg-[#FFFFFFB3]">
 
+                <div class="flex justify-center"><p class="p-4 rounded-b-xl bg-[#1e1e1e] text-white poppins font-medium text-[18px]">Don't watch keyboard  while playing...</p></div>
+                    <div class="h-full flex justify-center"><p id="alphbet" class="poppins font-semibold text-black text-[7rem] uppercase">Y</p></div></div>
+           
+            <!-- key bord -->
+            <div><div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id="q" class="kbd">q</kbd>
+                <kbd id="w" class="kbd">w</kbd>
+                <kbd id="e" class="kbd">e</kbd>
+                <kbd id="r" class="kbd">r</kbd>
+                <kbd id="t" class="kbd">t</kbd>
+                <kbd id="y" class="kbd">y</kbd>
+                <kbd id="u" class="kbd">u</kbd>
+                <kbd id="i" class="kbd">i</kbd>
+                <kbd id="o" class="kbd">o</kbd>
+                <kbd id="p" class="kbd">p</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id="a" class="kbd">a</kbd>
+                <kbd id="s" class="kbd">s</kbd>
+                <kbd id="d" class="kbd">d</kbd>
+                <kbd id="f" class="kbd">f</kbd>
+                <kbd id="g" class="kbd">g</kbd>
+                <kbd id="h" class="kbd">h</kbd>
+                <kbd id="j" class="kbd">j</kbd>
+                <kbd id="k" class="kbd">k</kbd>
+                <kbd id="l" class="kbd">l</kbd>
+              </div> 
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id="z" class="kbd">z</kbd>
+                <kbd id="x" class="kbd">x</kbd>
+                <kbd id="c" class="kbd">c</kbd>
+                <kbd id="v" class="kbd">v</kbd>
+                <kbd id="b" class="kbd">b</kbd>
+                <kbd id="n" class="kbd">n</kbd>
+                <kbd id="m" class="kbd">m</kbd>
+                <kbd id="/" class="kbd">/</kbd>
+              </div></div>
+            <!-- button -->
+            <div class="flex justify-between w-full"><button class="flex bg-[#894189] py-4 px-6 rounded-3xl gap-x-2 text-white">Life <img src="images/life.png" alt=""> <span>1</span></button> <button class="flex bg-[#360490] py-4 px-6 rounded-3xl gap-x-2 text-white">Score<img src="images/doller.png" alt=""> <span>1</span></button></div>
+        </div>
+        <!-- scror section -->
+        <section class=" hidden flex items-center">
+<div class="flex flex-col justify-center items-center p-12 rounded-2xl  bg-gradient-to-r from-[#FFFFFF8F] to-[#98979700] border border-1 border-[#FFFFFF33] border-solid">
+    <h2 class="poppons font-semibold text-6xl text-white mb-3">Score : 14</h2>
+    <button class="py-4 px-8 bg-white rounded-lg font-semibold text-2xl mb-4 poppins hover:bg-slate-400">Play Now</button>
+    <p class="poppins font-medium text-xl text-white">Practice will make you Pro</p>
+</div>
+        </section>
+       
+
+
+    </main>
+<script src="js/coustom.js"></script>
 </body>
 </html>
